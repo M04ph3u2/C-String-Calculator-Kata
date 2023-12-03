@@ -29,5 +29,10 @@ namespace TestCStringCalculatorKata
 			Assert::AreEqual(15, add("1,2,3,4,5"));
 			Assert::AreEqual(150, add("10,20,30,40,50"));
 		}
+
+		TEST_METHOD(TestMethodNewLinesBetweenNumbers)
+		{
+			Assert::AreEqual(6, add("1\n2,3"));
+		}
 	};
 }
