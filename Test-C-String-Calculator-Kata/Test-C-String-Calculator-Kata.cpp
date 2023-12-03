@@ -34,5 +34,10 @@ namespace TestCStringCalculatorKata
 		{
 			Assert::AreEqual(6, add("1\n2,3"));
 		}
+
+		TEST_METHOD(TestMethodNewDelimetersBetweenNumbers)
+		{
+			Assert::AreEqual(3, add("//;\n1;2"));
+		}
 	};
 }
