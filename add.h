@@ -10,6 +10,9 @@ int add(string numbers) {
         delimeter = numbers[2];
         numbers = numbers.substr(4);
     }
+    if (numbers.find("-") != string::npos) {
+        throw runtime_error("negatives not allowed: -" + numbers.substr(numbers.find("-") + 1, 1));
+    }
     int sum = 0;
     stringstream ss(numbers);
     string num, strg;
