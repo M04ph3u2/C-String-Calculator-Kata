@@ -11,9 +11,12 @@ int add(string numbers) {
     stringstream ss;
     ss << numbers;
     int sum = 0;
-    string num;
-    while (getline(ss, num, ',')) {
-        sum += stoi(num);
+    string num, strg;
+    while (getline(ss, strg, '\n')) {
+        stringstream ss2(strg);
+        while (getline(ss2, num, ',')) {
+            sum += stoi(num);
+        }
     }
     return sum;
 }
