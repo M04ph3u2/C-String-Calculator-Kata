@@ -1,10 +1,6 @@
 # String Calculator Kata
-The following is a TDD Kata, an exercise in coding, refactoring and test-first, that you should apply daily for at least 15-30 minutes.
-
-## Before you start
-* Try not to read ahead.
-* Do one task at a time. The trick is to learn to work incrementally.
-* Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
+The following is a TDD Kata, an exercise in coding, refactoring and test-first.
+I have completed it as part of the requirements for a job. The implementation is in C++.
 
 ## The kata
 
@@ -45,12 +41,8 @@ If there are multiple negatives, show all of them in the exception message.
 ### Step 6: ignore big numbers
 Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
 
-## General requirements
-- Use whatever language and frameworks you want. Use something that you know well.
-- Provide a README with instructions on how to compile and run the application.
-
-**IMPORTANT:**  Implement the requirements focusing on **writing the best code** you can produce.
-
-**CODE SUBMISSION:** Add the code to your own Github account and send us the link.
-
 Credits to [Roy Osherove](http://osherove.com/tdd-kata-1) for the original idea.
+
+### Instructions:
+
+It should be enough to just download the source code with any C++ compatible IDE (Visual Studio Code, CodeBlocks, etc).
