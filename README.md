@@ -1,4 +1,4 @@
-# String Calculator Kata
+# String Calculator Kata - C++ Version
 The following is a TDD Kata, an exercise in coding, refactoring and test-first.
 I have completed it as part of the requirements for a job. The implementation is in C++.
 
@@ -43,6 +43,16 @@ Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
 
 Credits to [Roy Osherove](http://osherove.com/tdd-kata-1) for the original idea.
 
-### Instructions:
+### Instructions for Running with C++ IDE:
 
-It should be enough to just download the source code with any C++ compatible IDE (Visual Studio Code, CodeBlocks, etc).
+1. **Download Source Code:**
+   Download the source code from the repository using your preferred method.
+
+2. **Open with C++ IDE:**
+   Open the downloaded source code folder with any C++ compatible IDE such as Visual Studio Code, Code::Blocks, etc.
+
+3. **Build and Run:**
+   Use the IDE's build and run commands to compile and execute the program.
+
+4. **Run Tests:**
+   There is a file with the Tests, it's in its folder, follow the IDE's instructions to run them for verification.
