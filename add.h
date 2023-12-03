@@ -8,16 +8,12 @@ int add(string numbers) {
     if (numbers.empty()) {
         return 0;
     }
-    if (numbers.find(",") != string::npos) {
-        stringstream ss(numbers);
-        int sum = 0;
-        string num;
-
-        while (getline(ss, num, ',')) {
-            sum += stoi(num);
-        }
-
-        return sum;
+    stringstream ss;
+    ss << numbers;
+    int sum = 0;
+    string num;
+    while (getline(ss, num, ',')) {
+        sum += stoi(num);
     }
-    return stoi(numbers);
+    return sum;
 }
