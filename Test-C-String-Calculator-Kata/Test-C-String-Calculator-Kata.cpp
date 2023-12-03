@@ -39,5 +39,16 @@ namespace TestCStringCalculatorKata
 		{
 			Assert::AreEqual(3, add("//;\n1;2"));
 		}
+
+		TEST_METHOD(TestMethodNegativeNumbers)
+		{
+			try {
+				add("1,4,-1");
+				Assert::Fail(L"Expected exception not thrown");
+			}
+			catch (const std::exception& ex) {
+				Assert::AreEqual("negatives not allowed: -1", ex.what());
+			}
+		}
 	};
 }
