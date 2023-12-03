@@ -28,7 +28,9 @@ int add(string numbers) {
     while (getline(ss, strg, '\n')) {
         stringstream lineStream(strg);
         while (getline(lineStream, num, delimeter)) {
-            sum += stoi(num);
+            if (stoi(num) <= 1000) {
+                sum += stoi(num);
+            }
         }
     }
     return sum;
