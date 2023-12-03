@@ -11,7 +11,16 @@ int add(string numbers) {
         numbers = numbers.substr(4);
     }
     if (numbers.find("-") != string::npos) {
-        throw runtime_error("negatives not allowed: -" + numbers.substr(numbers.find("-") + 1, 1));
+        int minusPos = numbers.find("-");
+        int substringStart = minusPos + 1;
+        int newlinePos = numbers.substr(substringStart).find('\n');
+        int delimiterPos = numbers.substr(substringStart).find(delimeter);
+        if (delimiterPos != string::npos && (newlinePos == string::npos || newlinePos < delimiterPos)) {
+            throw std::runtime_error("negatives not allowed: -" + numbers.substr(substringStart, delimiterPos));
+        }
+        else {
+            throw std::runtime_error("negatives not allowed: -" + numbers.substr(substringStart, newlinePos));
+        }
     }
     int sum = 0;
     stringstream ss(numbers);
