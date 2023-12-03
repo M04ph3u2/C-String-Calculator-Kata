@@ -50,5 +50,11 @@ namespace TestCStringCalculatorKata
 				Assert::AreEqual("negatives not allowed: -1", ex.what());
 			}
 		}
+
+		TEST_METHOD(TestMethodIgnoreBigNumbers)
+		{
+			Assert::AreEqual(2, add("2,1001"));
+			Assert::AreEqual(8, add("1234,8,2004,3461"));
+		}
 	};
 }
