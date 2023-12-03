@@ -23,5 +23,11 @@ namespace TestCStringCalculatorKata
 		{
 			Assert::AreEqual(3, add("1,2"));
 		}
+
+		TEST_METHOD(TestMethodXNumbers)
+		{
+			Assert::AreEqual(15, add("1,2,3,4,5"));
+			Assert::AreEqual(150, add("10,20,30,40,50"));
+		}
 	};
 }
